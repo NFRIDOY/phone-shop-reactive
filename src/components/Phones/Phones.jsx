@@ -6,7 +6,7 @@ export default function Phones({ phones }) {
         <div>Phones
             <div className="grid grid-cols-3">
                 {
-                    phones?.map((phone) => <Phone phone={phone}></Phone>)
+                    phones?.map((phone) => <Phone key={phone.id} phone={phone}></Phone>)
                 }
             </div>
 
