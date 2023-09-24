@@ -6,7 +6,7 @@ export default function Home() {
   const phones = useLoaderData(); 
 
   return (
-    <div>Home
+    <div>
       {/* {console.log(phones)} */}
       <Phones phones={phones}></Phones>
     </div>

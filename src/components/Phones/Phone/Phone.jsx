@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 export default function Phone({ phone }) {
     const { id, image, phone_name, brand_name, price, rating } = phone;
@@ -22,7 +22,7 @@ export default function Phone({ phone }) {
                             {brand_name}
                         </p>
                         <p className="block font-sans text-base leading-relaxed text-inherit antialiased font-bold">
-                        Price: ${price}
+                            Price: ${price}
                         </p>
                         <p className="block font-sans text-base leading-relaxed text-inherit antialiased font-bold">
                             Rating: {rating}
@@ -34,7 +34,11 @@ export default function Phone({ phone }) {
                             type="button"
                             data-ripple-light="true"
                         >
-                            Read More
+                            {/* <Link to={id}> */}
+                            {/* <Link to={`/phones/${id}`}> */}
+                            <Link to={`/phonedetails`}>
+                                Details
+                            </Link>
                         </button>
                     </div>
                 </div>
